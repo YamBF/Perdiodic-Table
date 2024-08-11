@@ -1,0 +1,454 @@
+:root {
+    --pastel-blue: #BBE9FF;
+    --pastel-purple: #E1AFD1;
+    --pastel-grey: #C7C8CC;
+    --pastel-green: #CBFFA9;
+    --pastel-pink: #FFC4E1;
+    --pastel-orange: #F6D7A7;
+    --pastel-red: #FF8787;
+    --pastel-turquoise: #B9F3E4;
+    --pastel-dark-blue: #8EA7E9;
+    --pastel-yellow: #FFF6BD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    box-shadow: 0px 5px 10px 0px gainsboro;
+}
+
+.title-wrapper {
+    color: #393e46;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+    width: 100%;
+}
+
+.main-left {
+    height: 100%;
+    width: 75%;
+    /*background-color: aquamarine;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.table-wrapper {
+    /*background-color: red;*/
+    width: 97%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.parent {
+    /*background-color: rebeccapurple;*/
+    display: grid;
+    height: 530px;
+    width: 100%;
+    grid-template-columns: repeat(18, 1fr); 
+    grid-template-rows: repeat(10, 1fr); 
+    grid-column-gap: 2px;
+    grid-row-gap: 2px; 
+}
+
+.parent > * {
+    width: 55px;
+    height: 55px;
+}
+
+#x1y1 { grid-area: 1 / 1 / 2 / 2; }
+#x18y1 { grid-area: 1 / 18 / 2 / 19; }
+#x1y2 { grid-area: 2 / 1 / 3 / 2; }
+#x2y2 { grid-area: 2 / 2 / 3 / 3; }
+#x13y2 { grid-area: 2 / 13 / 3 / 14; }
+#x14y2 { grid-area: 2 / 14 / 3 / 15; }
+#x15y2 { grid-area: 2 / 15 / 3 / 16; }
+#x16y2 { grid-area: 2 / 16 / 3 / 17; }
+#x17y2 { grid-area: 2 / 17 / 3 / 18; }
+#x18y2 { grid-area: 2 / 18 / 3 / 19; }
+#x1y3 { grid-area: 3 / 1 / 4 / 2; }
+#x2y3 { grid-area: 3 / 2 / 4 / 3; }
+#x13y3 { grid-area: 3 / 13 / 4 / 14; }
+#x14y3 { grid-area: 3 / 14 / 4 / 15; }
+#x15y3 { grid-area: 3 / 15 / 4 / 16; }
+#x16y3 { grid-area: 3 / 16 / 4 / 17; }
+#x17y3 { grid-area: 3 / 17 / 4 / 18; }
+#x18y3 { grid-area: 3 / 18 / 4 / 19; }
+#x1y4 { grid-area: 4 / 1 / 5 / 2; }
+#x2y4 { grid-area: 4 / 2 / 5 / 3; }
+#x3y4 { grid-area: 4 / 3 / 5 / 4; }
+#x4y4 { grid-area: 4 / 4 / 5 / 5; }
+#x5y4 { grid-area: 4 / 5 / 5 / 6; }
+#x6y4 { grid-area: 4 / 6 / 5 / 7; }
+#x7y4 { grid-area: 4 / 7 / 5 / 8; }
+#x8y4 { grid-area: 4 / 8 / 5 / 9; }
+#x9y4 { grid-area: 4 / 9 / 5 / 10; }
+#x10y4 { grid-area: 4 / 10 / 5 / 11; }
+#x11y4 { grid-area: 4 / 11 / 5 / 12; }
+#x12y4 { grid-area: 4 / 12 / 5 / 13; }
+#x13y4 { grid-area: 4 / 13 / 5 / 14; }
+#x14y4 { grid-area: 4 / 14 / 5 / 15; }
+#x15y4 { grid-area: 4 / 15 / 5 / 16; }
+#x16y4 { grid-area: 4 / 16 / 5 / 17; }
+#x17y4 { grid-area: 4 / 17 / 5 / 18; }
+#x18y4 { grid-area: 4 / 18 / 5 / 19; }
+#x1y5 { grid-area: 5 / 1 / 6 / 2; }
+#x2y5 { grid-area: 5 / 2 / 6 / 3; }
+#x3y5 { grid-area: 5 / 3 / 6 / 4; }
+#x4y5 { grid-area: 5 / 4 / 6 / 5; }
+#x5y5 { grid-area: 5 / 5 / 6 / 6; }
+#x6y5 { grid-area: 5 / 6 / 6 / 7; }
+#x7y5 { grid-area: 5 / 7 / 6 / 8; }
+#x8y5 { grid-area: 5 / 8 / 6 / 9; }
+#x9y5 { grid-area: 5 / 9 / 6 / 10; }
+#x10y5 { grid-area: 5 / 10 / 6 / 11; }
+#x11y5 { grid-area: 5 / 11 / 6 / 12; }
+#x12y5 { grid-area: 5 / 12 / 6 / 13; }
+#x13y5 { grid-area: 5 / 13 / 6 / 14; }
+#x14y5 { grid-area: 5 / 14 / 6 / 15; }
+#x15y5 { grid-area: 5 / 15 / 6 / 16; }
+#x16y5 { grid-area: 5 / 16 / 6 / 17; }
+#x17y5 { grid-area: 5 / 17 / 6 / 18; }
+#x18y5 { grid-area: 5 / 18 / 6 / 19; }
+#x1y6 { grid-area: 6 / 1 / 7 / 2; }
+#x2y6 { grid-area: 6 / 2 / 7 / 3; }
+#x3y9 { grid-area: 6 / 3 / 7 / 4; } /**/
+#x4y6 { grid-area: 6 / 4 / 7 / 5; }
+#x5y6 { grid-area: 6 / 5 / 7 / 6; }
+#x6y6 { grid-area: 6 / 6 / 7 / 7; }
+#x7y6 { grid-area: 6 / 7 / 7 / 8; }
+#x8y6 { grid-area: 6 / 8 / 7 / 9; }
+#x9y6 { grid-area: 6 / 9 / 7 / 10; }
+#x10y6 { grid-area: 6 / 10 / 7 / 11; }
+#x11y6 { grid-area: 6 / 11 / 7 / 12; }
+#x12y6 { grid-area: 6 / 12 / 7 / 13; }
+#x13y6 { grid-area: 6 / 13 / 7 / 14; }
+#x14y6 { grid-area: 6 / 14 / 7 / 15; }
+#x15y6 { grid-area: 6 / 15 / 7 / 16; }
+#x16y6 { grid-area: 6 / 16 / 7 / 17; }
+#x17y6 { grid-area: 6 / 17 / 7 / 18; }
+#x18y6 { grid-area: 6 / 18 / 7 / 19; }
+#x1y7 { grid-area: 7 / 1 / 8 / 2; }
+#x2y7 { grid-area: 7 / 2 / 8 / 3; }
+#x3y10 { grid-area: 7 / 3 / 8 / 4; } /**/
+#x4y7 { grid-area: 7 / 4 / 8 / 5; }
+#x5y7 { grid-area: 7 / 5 / 8 / 6; }
+#x6y7 { grid-area: 7 / 6 / 8 / 7; }
+#x7y7 { grid-area: 7 / 7 / 8 / 8; }
+#x8y7 { grid-area: 7 / 8 / 8 / 9; }
+#x9y7 { grid-area: 7 / 9 / 8 / 10; }
+#x10y7 { grid-area: 7 / 10 / 8 / 11; }
+#x11y7 { grid-area: 7 / 11 / 8 / 12; }
+#x12y7 { grid-area: 7 / 12 / 8 / 13; }
+#x13y7 { grid-area: 7 / 13 / 8 / 14; }
+#x14y7 { grid-area: 7 / 14 / 8 / 15; }
+#x15y7 { grid-area: 7 / 15 / 8 / 16; }
+#x16y7 { grid-area: 7 / 16 / 8 / 17; }
+#x17y7 { grid-area: 7 / 17 / 8 / 18; }
+#x18y7 { grid-area: 7 / 18 / 8 / 19; }
+#x4y9 { grid-area: 9 / 4 / 10 / 5; }
+#x5y9 { grid-area: 9 / 5 / 10 / 6; }
+#x6y9 { grid-area: 9 / 6 / 10 / 7; }
+#x7y9 { grid-area: 9 / 7 / 10 / 8; }
+#x8y9 { grid-area: 9 / 8 / 10 / 9; }
+#x9y9 { grid-area: 9 / 9 / 10 / 10; }
+#x10y9 { grid-area: 9 / 10 / 10 / 11; }
+#x11y9 { grid-area: 9 / 11 / 10 / 12; }
+#x12y9 { grid-area: 9 / 12 / 10 / 13; }
+#x13y9 { grid-area: 9 / 13 / 10 / 14; }
+#x14y9 { grid-area: 9 / 14 / 10 / 15; }
+#x15y9 { grid-area: 9 / 15 / 10 / 16; }
+#x16y9 { grid-area: 9 / 16 / 10 / 17; }
+#x17y9 { grid-area: 9 / 17 / 10 / 18; }
+#x4y10 { grid-area: 10 / 4 / 11 / 5; }
+#x5y10 { grid-area: 10 / 5 / 11 / 6; }
+#x6y10 { grid-area: 10 / 6 / 11 / 7; }
+#x7y10 { grid-area: 10 / 7 / 11 / 8; }
+#x8y10 { grid-area: 10 / 8 / 11 / 9; }
+#x9y10 { grid-area: 10 / 9 / 11 / 10; }
+#x10y10 { grid-area: 10 / 10 / 11 / 11; }
+#x11y10 { grid-area: 10 / 11 / 11 / 12; }
+#x12y10 { grid-area: 10 / 12 / 11 / 13; }
+#x13y10 { grid-area: 10 / 13 / 11 / 14; }
+#x14y10 { grid-area: 10 / 14 / 11 / 15; }
+#x15y10 { grid-area: 10 / 15 / 11 / 16; }
+#x16y10 { grid-area: 10 / 16 / 11 / 17; }
+#x17y10 { grid-area: 10 / 17 / 11 / 18; }
+
+
+
+
+
+
+
+.element {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0px 2px 3px 1px gainsboro;
+    border-radius: 3px;
+    transition: 50ms;
+}
+
+.element:hover {
+    opacity: 0.5;
+}
+
+.atomic-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    /*background-color: aqua;*/
+    pointer-events: none;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.atomic-nbr {
+    pointer-events: none;
+    font-size: 15px;
+}
+
+.atomic-mass {
+    font-size: 8px;
+    pointer-events: none;
+}
+
+.symbol {
+    font-size: 22px;
+    pointer-events: none;
+}
+
+.element-name {
+    font-size: 10px;
+    pointer-events: none;
+}
+
+.blue {
+    background-color: var(--pastel-blue);
+}
+
+.pink {
+    background-color: var(--pastel-pink);
+}
+
+.grey {
+    background-color: var(--pastel-grey);
+}
+
+.purple {
+    background-color: var(--pastel-purple);
+}
+
+.green {
+    background-color: var(--pastel-green);
+}
+
+.orange {
+    background-color: var(--pastel-orange);
+}
+
+.red {
+    background-color: var(--pastel-red);
+}
+
+.turquoise {
+    background-color: var(--pastel-turquoise);
+}
+
+.dark-blue {
+    background-color: var(--pastel-dark-blue);
+}
+
+.yellow {
+    background-color: var(--pastel-yellow);
+}
+
+.eighth {
+    margin-top: 20px;
+}
+
+
+
+
+
+.main-right {
+    height: 90%;
+    width: 25%;
+    /*background-color: blanchedalmond;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #eeeeee;
+    box-shadow: 0px 0px 2px 0px gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.symbol-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0px 10px 5px 2px gray;
+    border-radius: 3px;
+}
+
+.atomic-mass-nbr-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 30px;
+}
+
+.atomic-mass-nbr-txt .atomic-nbr-txt {
+    font-size: 35px;
+}
+
+.symbol-txt {
+    font-size: 85px;
+}
+
+.name-txt {
+    font-size: 25px;
+}
+
+.summary-wrapper {
+    display: flex;
+    text-align: justify;
+    width: 92%;
+    padding-top: 10px;
+}
+
+#summary-text {
+    font-size: 12px;
+}
+
+.right-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 40%;
+    width: 100%;
+    gap: 20px;
+    padding-left: 15px;
+}
+
+.natures-wrapper {
+    /*background-color: red;*/
+    background-color: #eeeeee;
+    width: 95%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 5px 10px 2px gainsboro;
+    border-radius: 3px;
+    color: #393e46
+}
+
+.nature {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    width: 10%;
+    height: 90%;
+    gap: 10px;
+}
+
+.color-logo {
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+}
+
+.nature span {
+    text-align: center;
+    align-items: center;
+}
+
+#nature-red {
+    border-color: var(--pastel-red);
+}
+
+#nature-yellow {
+    border-color: var(--pastel-yellow);
+}
+
+#nature-turquoise {
+    border-color: var(--pastel-turquoise);
+}
+
+#nature-orange {
+    border-color: var(--pastel-orange);
+}
+
+#nature-green {
+    border-color: var(--pastel-green);
+}
+
+#nature-grey {
+    border-color: var(--pastel-grey);
+}
+
+#nature-pink {
+    border-color: var(--pastel-pink);
+}
+
+#nature-purple {
+    border-color: var(--pastel-purple);
+}
+
+#nature-blue {
+    border-color: var(--pastel-blue);
+}
+
+#nature-dark-blue {
+    border-color: var(--pastel-dark-blue);
+}
